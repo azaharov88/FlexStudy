@@ -1,0 +1,235 @@
+@import "null.css";
+
+body {
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+  text-align: center;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  header.header {
+    background: #445162;
+
+    .header__row {
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+
+      .header__text {
+        padding: 0 30px 0 0;
+        color: #ffffff;
+
+        h1 {
+          font-size: 60px;
+          line-height: 1.2;
+          text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        ul {
+          li {
+            /*отступы не стал делать точь как в макете, так текст получился на линиях с картинкой*/
+            font-size: 20px;
+            line-height: 36px;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+            background: url(../img/icons/icon.png) 0 7px no-repeat;
+            padding: 0 0 0 35px;
+
+          }
+
+        }
+      }
+
+      .header__logo {
+        img {
+        }
+      }
+    }
+  }
+}
+
+main.main {
+  padding: 50px 0 0;
+  flex: 1 1 auto;
+
+  .main__row {
+    padding: 0 0 45px 0;
+    display: flex;
+
+    .col__img {
+      flex: 0 0 430px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .col__text {
+      padding: 0 70px 0 38px;
+      flex: 1 1 auto;
+
+      h2 {
+        margin: 0 0 35px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+        margin: 0 0 15px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .rows {
+    background: #f5f5f5;
+    padding: 45px 0 0 0;
+
+    h2 {
+      text-align: center;
+      margin: 0 0 30px;
+    }
+
+    .rows__column {
+      display: flex;
+      flex-wrap: wrap;
+
+      .column {
+
+        flex: 0 1 50%;
+
+        .column_flex {
+          display: flex;
+          margin: 0 0 30px;
+          .column_img {
+            flex: 0 0 200px;
+            img {
+              max-width: 100%;
+            }
+          }
+          .column__text {
+            flex: 1 1 auto;
+            padding: 0 16px;
+             h3 {
+              font-size: 24px;
+              line-height: 30px;
+              color: #445161;
+              margin: 0 0 15px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 24px;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .columns-wrapper{
+    padding: 49px 0 50px;
+    h2 {
+      margin: 0 0 29px;
+    }
+  }
+  .columns {
+
+    display: flex;
+    justify-content: space-around;
+    .columns__column {
+
+      flex: 0 0 27%;
+      padding: 18px 0 20px;
+      background: #445162;
+      border: #445162 1px;
+      border-radius: 10px;
+      color: #ffffff;
+      .column__item {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        .item__head {
+
+          h3{
+            text-align: center;
+            font-size: 24px;
+            line-height: 30px;
+            text-transform: uppercase;
+          }
+
+          span {
+            margin: 12px 2px 0;
+            padding: 25px 0 19px 0;
+            text-align: center;
+            display: block;
+            background: #fff;
+            font-size: 40px;
+            line-height: 30px;
+            color: #445162;
+          }
+        }
+        .item__body {
+          padding: 19px 0 0 0;
+          flex: 1 1 auto;
+          p {
+            font-size: 14px;
+            line-height: 24px;
+            padding: 0 30px 0 20px;
+            margin: 0 0 15px 0;
+
+          }
+        }
+        .item_button {
+          padding: 0 20px;
+          a {
+            display: block;
+            text-align: center;
+            background: #fff;
+            border-radius: 15px;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #445161;
+            padding: 15px 0 13px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+footer.footer {
+  background: #f5f5f5;
+  .footer__row {
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__text {
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.025em;
+      color: #445162;
+    }
+  }
+}
+
